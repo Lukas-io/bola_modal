@@ -145,6 +145,7 @@ class HomeScreen extends StatelessWidget {
                   ],
                 ),
                 const Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text('Total'),
                     Text('0.00'),
