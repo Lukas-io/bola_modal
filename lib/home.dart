@@ -152,7 +152,11 @@ class HomeScreen extends StatelessWidget {
                 ),
                 Stack(
                   children: [
-                    Image.asset('button.png'),
+                    Expanded(
+                        child: Image.asset(
+                      'buttons.png',
+                      height: 25.0,
+                    )),
                     const Center(
                       child: Text('Buy BTC'),
                     )
