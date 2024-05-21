@@ -16,12 +16,18 @@ class HomeScreen extends StatelessWidget {
               children: [
                 Container(
                   decoration: const BoxDecoration(
+                      color: Colors.black12,
                       borderRadius: BorderRadius.all(Radius.circular(12.0))),
                   child: Row(
                     children: [
                       Expanded(
                           child: Container(
                               alignment: Alignment.center,
+                              decoration: BoxDecoration(
+                                  border: Border.all(
+                                      color: Colors.lightGreenAccent),
+                                  borderRadius:
+                                      BorderRadius.all((Radius.circular(4.0)))),
                               child: const Text(
                                 'Buy',
                                 style: TextStyle(
@@ -31,8 +37,11 @@ class HomeScreen extends StatelessWidget {
                       Expanded(
                           child: Container(
                               alignment: Alignment.center,
+                              decoration: BoxDecoration(
+                                  borderRadius:
+                                      BorderRadius.all((Radius.circular(4.0)))),
                               child: const Text(
-                                'Buy',
+                                'Sell',
                                 style: TextStyle(
                                     color: Colors.white,
                                     fontWeight: FontWeight.bold),
