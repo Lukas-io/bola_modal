@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -136,6 +137,82 @@ class HomeScreen extends StatelessWidget {
                     Text('0.00'),
                   ],
                 ),
+                Stack(
+                  children: [
+                    Image.asset('button.png'),
+                    const Center(
+                      child: Text('Buy BTC'),
+                    )
+                  ],
+                ),
+                const Divider(),
+                const Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Column(
+                      children: [
+                        Text(
+                          'Total account value',
+                          style: TextStyle(fontSize: 12.0),
+                        ),
+                        Text(
+                          '0.00',
+                          style: TextStyle(fontSize: 12.0),
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [Text('NGN'), Icon(Icons.arrow_drop_down)],
+                    )
+                  ],
+                ),
+                const Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Column(
+                      children: [
+                        Text(
+                          'Open Orders',
+                          style: TextStyle(fontSize: 12.0),
+                        ),
+                        Text(
+                          '0.00',
+                          style: TextStyle(fontSize: 12.0),
+                        ),
+                      ],
+                    ),
+                    Column(
+                      children: [
+                        Text(
+                          'Available',
+                          style: TextStyle(fontSize: 12.0),
+                        ),
+                        Text(
+                          '0.00',
+                          style: TextStyle(fontSize: 12.0),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+                TextButton(
+                  onPressed: null,
+                  style: ButtonStyle(
+                    backgroundColor:
+                        MaterialStateProperty.all(CupertinoColors.activeBlue),
+                    shape: MaterialStateProperty.all(
+                      const RoundedRectangleBorder(
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(4.0),
+                        ),
+                      ),
+                    ),
+                  ),
+                  child: const Text(
+                    'Deposit',
+                    style: TextStyle(fontWeight: FontWeight.w600),
+                  ),
+                )
               ],
             ));
       },
