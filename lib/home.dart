@@ -29,8 +29,8 @@ class HomeScreen extends StatelessWidget {
                               decoration: BoxDecoration(
                                   border: Border.all(
                                       color: Colors.lightGreenAccent),
-                                  borderRadius:
-                                      BorderRadius.all((Radius.circular(4.0)))),
+                                  borderRadius: const BorderRadius.all(
+                                      (Radius.circular(4.0)))),
                               child: const Text(
                                 'Buy',
                                 style: TextStyle(
@@ -40,7 +40,7 @@ class HomeScreen extends StatelessWidget {
                       Expanded(
                           child: Container(
                               alignment: Alignment.center,
-                              decoration: BoxDecoration(
+                              decoration: const BoxDecoration(
                                   borderRadius:
                                       BorderRadius.all((Radius.circular(4.0)))),
                               child: const Text(
