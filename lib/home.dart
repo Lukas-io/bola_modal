@@ -10,6 +10,9 @@ class HomeScreen extends StatelessWidget {
       builder: (context) {
         return Container(
             decoration: const BoxDecoration(
+              borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(12.0),
+                  topRight: Radius.circular(12.0)),
               color: Color(0xff20252B),
             ),
             child: Column(
